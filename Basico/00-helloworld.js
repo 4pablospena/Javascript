@@ -4,8 +4,11 @@
 es un comentario
 que ya no es simple.*/
 
+// Cadena de texto con "Comillas dobles"   
 console.log("¡Hola, JavaScript!")
+// Cadena de texto con 'Comillas simples'
 console.log('¡Hola, JavaScript!')
+// Cadena de texto con `Apóstrofes`
 console.log(`¡Hola, JavaScript!`)
 
 
