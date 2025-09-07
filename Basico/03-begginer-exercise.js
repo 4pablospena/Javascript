@@ -129,6 +129,7 @@
         numeroEnorme = `pepo`
         numeroEnorme2 = 'pepa'
 
+        //las variables declaradas con let en JavaScript pueden cambiar tanto de valor como de tipo.
 
 // 8. Declara constantes con valores asociados a todos los tipos de datos primitivos.
 
@@ -136,7 +137,7 @@
         const año = 1991
         const isfast = false
         const matricula = Symbol("3311HCD")
-        // const cilindrada
+        const cilindrada = undefined
         const kilometros = null 
         const bastidor = (123456789012345678901234567890)
 
@@ -146,7 +147,7 @@
         año = 2009
         isfast = false
         matricula = Symbol("3672BJF")
-        // cilindrada = "hola"
+        cilindrada
         kilometros = 123234
         bastidor = (12345678901234567892345501234567890)
 
