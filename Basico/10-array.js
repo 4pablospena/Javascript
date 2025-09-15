@@ -82,7 +82,7 @@ myArray.push("Pablo", "Suarez", "Peña", 34, true)
 let myNewArray = myArray.slice(1, 2)
 console.log(myNewArray)
 
-//splice : Porcion pero borra lo que indicamos.
+//splice : Porcion pero borra lo que indicamos. (indice, cantidad)
 
 myArray.splice(1, 2)
 console.log(myArray)
