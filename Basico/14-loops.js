@@ -64,7 +64,7 @@ for (let valor of myMap) {
 // buenas practicas
 
 // break (termina el bucle antes de tiempo cuando se cumple una condicion)
-// continue ( salta la iteracion actualy pasa a la siguiente)
+// continue ( salta la iteracion actual y pasa a la siguiente)
 
 for ( let i = 0; i < 10; i++){
     if ( i == 5 ){
