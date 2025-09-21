@@ -1,5 +1,12 @@
 // Funciones
 
+/*
+    function nombreDeLaFuncion(parámetros) {
+        // código a ejecutar
+        return resultado; // valor que devuelve (opcional)
+    }
+*/
+
 
 // Simple
 function myFunc(){

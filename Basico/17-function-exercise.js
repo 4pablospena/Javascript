@@ -49,7 +49,7 @@ let resultado2 = numeroVocales(frase)
 console.log("El número mayor de vocales es :", resultado2)
 
 
-// 4. Crea una funciÃ³n que reciba un array de strings y devuelva un nuevo array con las strings en mayÃºsculas.
+// 4. Crea una funcion que reciba un array de strings y devuelva un nuevo array con las strings en mayusculas.
 
 
 function mayus(cadena){
@@ -66,14 +66,99 @@ let resultado3 = mayus(pablo)
 console.log(resultado3)
 
 
-// 5. Crea una funciÃ³n que reciba un nÃºmero y devuelva true si es primo, y false en caso contrario.
+// 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario.
 
-// 6. Crea una funciÃ³n que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos.
+function primo (numero){
+    if (numero <= 1)
+        return false
 
-// 7. Crea una funciÃ³n que reciba un array de nÃºmeros y devuelva la suma de todos los nÃºmeros pares.
+    for (let i = 2 ; i < numero; i++){
+        if ( numero % i === 0){
+            return false
+        }
+    }
+    return true
+}
 
-// 8. Crea una funciÃ³n que reciba un array de nÃºmeros y devuelva un nuevo array con cada nÃºmero elevado al cuadrado.
+console.log(primo(3))
+console.log(primo(4))
+console.log(primo(10))
+console.log(primo(13))
 
-// 9. Crea una funciÃ³n que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso.
+// 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos.
 
-// 10. Crea una funciÃ³n que calcule el factorial de un nÃºmero dado.
+function elementosComunes(arr1, arr2) {
+  let resultado = []
+
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr2.includes(arr1[i]) && !resultado.includes(arr1[i])) {
+        resultado.push(arr1[i])
+        }
+    }
+    return resultado
+}
+
+let array1 = [1, 2, 3, 4]
+let array2 = [3, 4, 5, 6]
+
+console.log(elementosComunes(array1, array2))
+
+// 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares.
+
+function pares(n){
+    let suma = 0
+
+    for (let i = 0 ; i < n.length ; i++) {
+        if (n[i] % 2 === 0){
+            suma += n[i]
+        }
+    }return suma
+}
+
+let n = [1, 2, 3, 4, 5 , 6 , 7, 8 ]
+console.log(pares(n))
+
+
+
+// 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado.
+
+function cuadrados(m){
+    let listaCuadrdado = []
+
+    for (let i = 0 ; i < m.length ; i++) {
+        listaCuadrdado.push(n[i] ** 2)    
+    }
+    return listaCuadrdado
+ }
+
+
+let m   = [1, 2, 3, 4, 5 , 6 , 7, 8 ]
+console.log(cuadrados(m))
+
+// 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso.
+
+function inversa(texto) {
+  let palabras = texto.split(" ")
+  let palabrasInvertidas = palabras.reverse()
+  return palabrasInvertidas.join(" ")
+}
+
+let texto = "Pablo Suarez Peña"
+console.log(inversa(texto))
+
+
+// 10. Crea una función que calcule el factorial de un número dado.
+
+function factorial(number){
+
+    if (number < 0) return null
+
+    let numFac = 1
+
+    for (let i = 1; i <= number ; i++){
+        numFac *= i
+    }
+    return numFac
+}
+
+console.log(factorial(5))
