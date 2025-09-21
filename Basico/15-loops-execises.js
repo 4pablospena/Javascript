@@ -37,7 +37,7 @@ let cadena = "esto es una cadena de texto."
 let count = 0
 let vocales = "aeiouAEIOU"
 
-for (let i = 0; i <=cadena.length; i++){
+for (let i = 0; i <= cadena.length; i++){
     if(vocales.includes(cadena[i])){
         count++;
     }
