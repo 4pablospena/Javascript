@@ -72,7 +72,7 @@ let person3 = {
         name: "Floor Manager",
         exp: 3,
         work: function (){
-            console.log("La persona trabaja.")
+            console.log(`La persona de ${this.exp} años de experiencia trabaja.`)
         }
     }
 }
@@ -99,3 +99,24 @@ console.log(person === person4)
 console.log(person.name == person4.name) 
 console.log(person.age == person4.age)
 console.log(person.alias == person4.alias)
+
+
+// Iteracion
+
+for(let key in person4){
+    console.log(key + ":" + person4 [key])
+}
+
+
+// Funciones como objetos
+
+function Person(name, age){   // DEBERIA SER UNA CLASE. 
+    this.name = name
+    this.age = age
+}
+
+let person5 = new Person ("Ana" , 30)
+console.log(person5)
+
+console.log(typeof person4)
+console.log(typeof person5)
