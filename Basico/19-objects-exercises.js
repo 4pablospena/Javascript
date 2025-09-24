@@ -70,7 +70,7 @@ console.log(car3.ruedas.dibujo)
 console.log(car)
 console.log(car2)
 
-console.log(car == car2)  // no se pueden igualar referencias a objatos
+console.log(car == car2)  
 console.log(car === car2)
 
 console.log(car.marca == car2.marca) 
@@ -79,3 +79,6 @@ console.log(car.año == car2.año)
 
 
 // 10. Comprueba si dos propiedades diferentes son iguales.
+
+console.log(car.modelo == car.año)
+console.log(car.marca == car.modeloxs)
