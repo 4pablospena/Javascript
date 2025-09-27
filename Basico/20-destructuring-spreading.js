@@ -23,7 +23,6 @@ console.log(myValue2)
 console.log(myValue3)
 console.log(myValue4)
 
-
 // Sintaxis arrays con valores predeterminados
 
 let [myValue5 = 0, myValue6 = 0, myValue7 = 0, myValue8 = 0, myValue9 = 0] = myArray // predeterminados a 0 si no hay valor.
@@ -32,7 +31,6 @@ console.log(myValue6)
 console.log(myValue7)
 console.log(myValue8)
 console.log(myValue9)
-
 
 // Ignorar elementos de array
 
@@ -62,15 +60,7 @@ console.log(name3)
 console.log(age3)
 console.log(alias3)
 
-
-
-
-
-
-
-
-
-
-
 // Propagación
 // facilita la combinación, copia y expansión de arrays y objetos de manera flexible.
+
+
