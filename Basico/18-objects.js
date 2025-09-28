@@ -14,37 +14,37 @@ let person = {
 // Acceso a propiedades
 
 // notacion llamada por punto. (MEJOR)
-console.log(person.name)
-console.log(person.age)
-console.log(person.alias)
+    console.log(person.name)
+    console.log(person.age)
+    console.log(person.alias)
 
 // notacion de corchetes
-console.log(person["name"])
-console.log(person["age"])
-console.log(person["alias"])
+    console.log(person["name"])
+    console.log(person["age"])
+    console.log(person["alias"])
 
 // Modificación
 
 person.name = "Pablo Suarez"
-console.log(person.name)
+    console.log(person.name)
 
 
 console.log(typeof person.age)
 person.age = "33"
-console.log(person.age)
-console.log(typeof person.age)
+    console.log(person.age)
+    console.log(typeof person.age)
 
 // Eliminaciond de propiedades
 
 delete person.age
-console.log(person)
+    console.log(person)
 
 
 // Nueva propiedad
 
 person.email = "pablospena@gmail.com"
 person["age"] = 33
-console.log(person)
+    console.log(person)
 
 
 // Metodos (Funciones)
@@ -77,9 +77,10 @@ let person3 = {
     }
 }
 
-console.log(person3)
-console.log(person3.job)
-console.log(person3.job.name)
+    console.log(person3)
+    console.log(person3.job)
+    console.log(person3.job.name)
+
 person3.job.work()
 
 // Igualdad de objetos
@@ -90,15 +91,15 @@ let person4 = {
     alias: "pablospena4"
 }
 
-console.log(person)
-console.log(person4)
+    console.log(person)
+    console.log(person4)
 
-console.log(person == person4)  // no se pueden igualar referencias a objatos
-console.log(person === person4)
+    console.log(person == person4)  // no se pueden igualar referencias a objatos
+    console.log(person === person4)
 
-console.log(person.name == person4.name) 
-console.log(person.age == person4.age)
-console.log(person.alias == person4.alias)
+    console.log(person.name == person4.name) 
+    console.log(person.age == person4.age)
+    console.log(person.alias == person4.alias)
 
 
 // Iteracion
@@ -116,7 +117,7 @@ function Person(name, age){   // DEBERIA SER UNA CLASE.
 }
 
 let person5 = new Person ("Ana" , 30)
-console.log(person5)
+    console.log(person5)
 
-console.log(typeof person4)
-console.log(typeof person5)
+    console.log(typeof person4)
+    console.log(typeof person5)

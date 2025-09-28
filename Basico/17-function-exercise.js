@@ -24,11 +24,10 @@ function maximoNumero(numeros) {
 }
 
 let resultado = maximoNumero(numeros)
-console.log("El número mayor es:", resultado)
-
+    console.log("El número mayor es:", resultado)
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene.
-
+    
 let frase = "PablitO clavo un clAvito, que clavito clavo PablIto"
 frase = frase.toLowerCase()
 
@@ -46,11 +45,9 @@ function numeroVocales (frase){
 }
 
 let resultado2 = numeroVocales(frase)
-console.log("El número mayor de vocales es :", resultado2)
-
+    console.log("El número mayor de vocales es :", resultado2)
 
 // 4. Crea una funcion que reciba un array de strings y devuelva un nuevo array con las strings en mayusculas.
-
 
 function mayus(cadena){
     let cadena2 = []
@@ -63,8 +60,7 @@ function mayus(cadena){
 
 let pablo = ["p","a","b","l","o"]
 let resultado3 = mayus(pablo)
-console.log(resultado3)
-
+    console.log(resultado3)
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario.
 
@@ -79,11 +75,10 @@ function primo (numero){
     }
     return true
 }
-
-console.log(primo(3))
-console.log(primo(4))
-console.log(primo(10))
-console.log(primo(13))
+    console.log(primo(3))
+    console.log(primo(4))
+    console.log(primo(10))
+    console.log(primo(13))
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos.
 
@@ -101,7 +96,7 @@ function elementosComunes(arr1, arr2) {
 let array1 = [1, 2, 3, 4]
 let array2 = [3, 4, 5, 6]
 
-console.log(elementosComunes(array1, array2))
+    console.log(elementosComunes(array1, array2))
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares.
 
@@ -116,9 +111,7 @@ function pares(n){
 }
 
 let n = [1, 2, 3, 4, 5 , 6 , 7, 8 ]
-console.log(pares(n))
-
-
+    console.log(pares(n))
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado.
 
