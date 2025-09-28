@@ -60,7 +60,52 @@ console.log(name3)
 console.log(age3)
 console.log(alias3)
 
-// Propagación
+// objetc anidados:
+
+let person3 = {
+    name: "Pablo",
+    age: 33,
+    alias: "pablospena4",
+    walk: function () {
+        console.log("La persona camina.")
+    },
+    job: {
+        name: "Floor Manager",
+        exp: 3,
+        work: function (){
+            console.log(`La persona de ${this.exp} años de experiencia trabaja.`)
+        }
+    }
+}
+
+let {name: name4 , job : { name: jobName}} = person3
+console.log(name4)
+console.log(jobName)
+
+
+// Propagación (...)
 // facilita la combinación, copia y expansión de arrays y objetos de manera flexible.
 
 
+// SintaxiS
+
+let myArray2 = [...myArray]
+let myArray3 = [...myArray, 5, 6, 7]
+
+console.log(myArray2)
+console.log(myArray3)
+
+// Combinacion
+
+let myArray4 = [...myArray2, ...myArray3]
+console.log(myArray4)
+
+// Sintaxis objets
+
+// copia de objects
+let person4 = {...person}
+console.log(person4)
+
+
+let person5 = {...person, email: "email@email.com"}
+console.log(person5)
