@@ -11,9 +11,9 @@
     let arrayB = [ 1, 2]
     let [arrayB1 , arrayB2 , arrayB3 = 4] = arrayB
 
-    console.log(arrayB1)
-    console.log(arrayB2)
-    console.log(arrayB3)
+        console.log(arrayB1)
+        console.log(arrayB2)
+        console.log(arrayB3)
 
 // 3. Usa desestructuración para extraer dos propiedades de un objeto.
 
@@ -64,12 +64,12 @@
     let array4 = [7, 8, 40, 1]
 
     let array5 = [...array3, ...array4]
-    console.log(array5)
+        console.log(array5)
 
 // 7. Usa propagación para crear una copia de un array.
 
     let array6 = [...array5]
-    console.log(array6)
+        console.log(array6)
 
 // 8. Usa propagación para combinar dos objetos en uno nuevo.
 
@@ -80,12 +80,12 @@
     }
     
     let persona4 ={ ...persona2,...persona3} 
-    console.log(persona4)
+        console.log(persona4)
 
 // 9. Usa propagación para crear una copia de un objeto.
 
     let persona5 = { ...persona4}
-    console.log(persona5)
+        console.log(persona5)
 
 // 10. Combina desestructuración y propagación.
 
@@ -107,5 +107,4 @@
         ...resto,
         nombre: "Lucas" 
     };
-
-    console.log(persona7)
+        console.log(persona7)
