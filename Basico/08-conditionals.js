@@ -31,7 +31,7 @@
 
     const message = age == 34 ? "La edad es 34" : "La edad no es 34"
     console.log(message)
- 
+
 // Switch (una unica variable con muchas condiciones)
 
     let day = 3
