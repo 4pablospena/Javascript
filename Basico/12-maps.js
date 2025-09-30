@@ -5,7 +5,7 @@
 
 let myMap = new Map()
 
-console.log(myMap)
+    console.log(myMap)
 
 // Inicializacion
 
@@ -15,7 +15,7 @@ myMap = new Map([
     ["age", 34]
 ])
 
-console.log(myMap)
+    console.log(myMap)
 
 // METODOS
 
@@ -23,35 +23,34 @@ console.log(myMap)
 
 myMap.set("alias", "pablospena")
 myMap.set("name", "Pablo Suarez")
-console.log(myMap)
+    console.log(myMap)
 
 // set : recuperar el valor,
 
-console.log(myMap.get("name"))
-console.log(myMap.get("surname"))
+    console.log(myMap.get("name"))
+    console.log(myMap.get("surname"))
 
 // has: clave existe?
 
-console.log(myMap.has("name"))
-console.log(myMap.has("surname"))
+    console.log(myMap.has("name"))
+    console.log(myMap.has("surname"))
 
 // keys, values y entries
 
-console.log(myMap.keys())
-console.log(myMap.values())
-console.log(myMap.entries())
+    console.log(myMap.keys())
+    console.log(myMap.values())
+    console.log(myMap.entries())
 
 // size 
-console.log(myMap.size)
+    console.log(myMap.size)
 
 // delete:
 
 myMap.delete("email")
-console.log(myMap)
+    console.log(myMap)
 
 // clear: limpiar el map 
 
 myMap.clear()
-
-console.log(myMap)
+    console.log(myMap)
 

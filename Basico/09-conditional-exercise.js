@@ -46,34 +46,34 @@
     let edad = 18  
 
     const etapa = edad >= 18 ? "Adulto" : "Menor"
-    console.log(etapa)
+        console.log(etapa)
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes".
 
     let mes = 9
 
     if (mes == 12 || mes == 1 || mes == 2) {
-    console.log("Invierno")
+        console.log("Invierno")
     } else if (mes >= 3 && mes <= 5) {
-    console.log("Primavera")
+        console.log("Primavera")
     } else if (mes >= 6 && mes <= 8) {
-    console.log("Verano")
+        console.log("Verano")
     } else if (mes >= 9 && mes <= 11) {
-    console.log("Otoño")
+        console.log("Otoño")
     } else {
-    console.log("Mes inválido");
+        console.log("Mes inválido");
     }
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior.
 
     if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
-    console.log("El mes tiene 31 días");
+        console.log("El mes tiene 31 días");
     } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
-    console.log("El mes tiene 30 días");
+        console.log("El mes tiene 30 días");
     } else if (mes == 2) {
-    console.log("El mes tiene 28 días (29 si es año bisiesto)");
+        console.log("El mes tiene 28 días (29 si es año bisiesto)");
     } else {
-    console.log("Mes inválido");
+        console.log("Mes inválido");
     }
 
 // switch
