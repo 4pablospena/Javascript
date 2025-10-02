@@ -110,11 +110,6 @@ class GetSetPerson {
     set bank(newBank){
         this.#bank = newBank
     }
-
-    get bank(){
-        return this.#bank
-    }
-
 }
 
 let person8 = new GetSetPerson("Pablo", 33, "pablospena", "IBAN12345678910")
@@ -122,4 +117,3 @@ console.log(person8)
 console.log(person8.name)
 
 person8.bank = "new IBAN12345678910"
-console.log(person8.bank)
