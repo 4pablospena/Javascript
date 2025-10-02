@@ -95,7 +95,7 @@ class GetSetPerson {
     #alias
     #bank
 
-    constructor(name , age , alias) {
+    constructor(name , age , alias, bank) {
         this.#name = name
         this.#age = age
         this.#alias = alias
@@ -117,3 +117,54 @@ console.log(person8)
 console.log(person8.name)
 
 person8.bank = "new IBAN12345678910"
+
+// Herencia
+
+class Animal{
+    constructor(name){
+        this.name = name
+    }
+
+    sound() {
+        console.log("El animal emite un sonido generico")
+    }
+}
+
+class Dog extends Animal {
+
+    run(){
+        console.log("El perro corre.")
+    }
+
+    sound(){
+        console.log("Guau")
+    }
+}
+class Fish extends Animal {
+
+    constructor(name,size){
+        super(name)
+        this.size = size
+    }
+    swim(){
+        console.log("El pez nada.")
+    }
+}
+
+let myDog = new Dog("PerroPeña")
+myDog.run()
+myDog.sound()
+
+let myFish = new Fish("pezPEña", 2)
+myFish.sound()
+myFish.swim()
+
+// Metodos estaticos.
+
+class MathOperations{
+    static sum(a,b){
+        return a + b
+    }
+}
+
+console.log(MathOperations.sum(5 , 10))
